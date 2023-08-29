@@ -1,4 +1,4 @@
-<ion-header [translucent]="true" >
+<ion-header [translucent]="true">
   <ion-toolbar color="danger">
     <ion-title>
       Pagos comerciales transfronterizos
@@ -10,8 +10,12 @@
   <ion-item class="ion-margin">
     <ion-label>
       <h1>Introducción</h1>
-      <p class="ion-padding-bottom">A menudo se percibe que los pagos transfronterizos enfrentan desafíos de alto costo, baja velocidad, acceso limitado y transparencia insuficiente.
-        El Banco de Pagos Internacionales había identificado siete cuestiones clave para los pagos transfronterizos bajo el actual modelo de liquidación de banca corresponsal</p>
+      <p class="ion-padding-bottom">
+        A menudo se percibe que los pagos transfronterizos enfrentan desafíos de alto costo,
+        baja velocidad, acceso limitado y transparencia insuficiente.
+        El Banco de Pagos Internacionales había identificado siete cuestiones clave para los pagos transfronterizos bajo
+        el actual modelo de liquidación de banca corresponsal
+      </p>
       <ion-list lines="inset">
         <ion-list-header>
           <ion-label>Siete cuestiones clave</ion-label>
@@ -45,14 +49,136 @@
           <p>Competencia débil</p>
         </ion-item>
       </ion-list>
-      <p class="ion-padding-bottom">Una de las cinco áreas de enfoque es explorar el papel potencial de las nuevas infraestructuras y acuerdos de pago, y las monedas digitales del banco central (CBDC) fueron identificadas como un facilitador y catalizador para eliminar potencialmente los obstáculos al surgimiento de nuevas infraestructuras y acuerdos de pago transfronterizos.</p>
+      <p class="ion-padding-bottom">
+        Una de las cinco áreas de enfoque es explorar el papel potencial de las nuevas infraestructuras y acuerdos de
+        pago, y las monedas digitales del banco central (CBDC) fueron identificadas como un facilitador y catalizador
+        para eliminar potencialmente los obstáculos al surgimiento de nuevas infraestructuras y acuerdos de pago
+        transfronterizos.
+      </p>
     </ion-label>
   </ion-item>
   <ion-item class="ion-margin">
     <ion-label>
       <h1>Principales desafíos en la liquidación de acuerdos comerciales transfronterizos</h1>
-      <p class="ion-padding-bottom">De los siete problemas clave identificados por BI, HSBC está interesado en explorar el uso de CBDC mayorista para abordar cuatro obstáculos principales que enfrentan los pagos transfronterizos.</p>
-      <p class="ion-padding-bottom">Una de las cinco áreas de enfoque es explorar el papel potencial de las nuevas infraestructuras y acuerdos de pago, y las monedas digitales del banco central (CBDC) fueron identificadas como un facilitador y catalizador para eliminar potencialmente los obstáculos al surgimiento de nuevas infraestructuras y acuerdos de pago transfronterizos.</p>
+      <p class="ion-padding-bottom">
+        De los siete problemas clave identificados por BI, HSBC está interesado en explorar el uso de CBDC mayorista
+        para abordar cuatro obstáculos principales que enfrentan los pagos transfronterizos.
+      </p>
+      <p class="ion-padding-bottom">
+        Una de las cinco áreas de enfoque es explorar el papel potencial de las nuevas infraestructuras y acuerdos de
+        pago, y las monedas digitales del banco central (CBDC) fueron identificadas como un facilitador y catalizador
+        para eliminar potencialmente los obstáculos al surgimiento de nuevas infraestructuras y acuerdos de pago
+        transfronterizos.
+      </p>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-button color="danger" expand="full" shape="round" (click)="openModal(1)">
+              Procesamiento complejo de controles de cumplimiento
+            </ion-button>
+          </ion-col>
+          <ion-col size="6">
+            <ion-button color="danger" expand="full" shape="round" (click)="openModal(2)">
+              Horario de funcionamiento limitado
+            </ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <ion-button color="danger" expand="full" shape="round" (click)="openModal(3)">
+              Largas cadenas de transacciones
+            </ion-button>
+          </ion-col>
+          <ion-col size="6">
+            <ion-button color="danger" expand="full" shape="round" (click)="openModal(4)">
+              Costos de financiación
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-label>
+  </ion-item>
+  <ion-item class="ion-margin">
+    <ion-label>
+      <h1>Proceso de pago transfronterizo mejorado habilitado por la liquidación CBDC mayorista de
+        mBridge</h1>
+        <ion-grid>
+          <ion-row class="ion-align-items-center">
+            <ion-col>
+              <ion-img src="assets/images/imagen1.png" alt="imagen">
+              </ion-img>
+            </ion-col>
+            <ion-col>
+              <ion-img src="assets/images/imagen2.png" alt="imagen">
+              </ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      <p class="ion-padding-bottom">
+        Proceso de liquidación mayorista de CBDC de un hipotético pago comercial
+        transfronterizo de Tailandia a Hong Kong a través de la plataforma mBrigde.
+      </p>
+    </ion-label>
+  </ion-item>
+  <ion-item class="ion-margin">
+    <ion-label>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-img src="assets/images/imagen3.png" alt="imagen">
+            </ion-img>
+          </ion-col>
+          <ion-col>
+            <ion-label class="ion-text-center vertical-center"> Modelo conceptual de conectividad mBridge entre sistemas
+              de compensación locales, cuentas de liquidación del banco central, nodos de validación del banco central y
+              nodos participantes de CBDC en cadena para bancos comerciales.</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-label>
+  </ion-item>
+  <ion-item class="ion-margin">
+    <ion-label>
+      <h1>Oportunidades habilitadas por mBridge para la liquidación de pagos comerciales transfronterizos</h1>
+      <p class="ion-padding-bottom">
+        HSBC está interesado en explorar el uso de mBridge para la liquidación de pagos comerciales transfronterizos. Los puntos débiles antes mencionados podrían abordarse
+      </p>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6" class="col-custom-4">
+            <h2>Capacidades Regtech mejoradas</h2>
+            <p>
+              los diseños de cbdc permiten una trazabilidad completa habilitada por la tecnología DLT, existe una oportunidad única para que los bancos comerciales, los reguladores y los organismos internacionales trabajen juntos para explorar nuevas formas de utilizar la tecnología para mejorar la lucha contra el lavado de dinero, el control de sanciones y el fraude. monitoreo y mitigación del riesgo de delitos financieros.
+            </p>
+          </ion-col>
+          <ion-col size="6" class="col-custom-1">
+            <h2>Horario de funcionamiento ampliado</h2>
+            <p>
+              Dado que el puente es una infraestructura independiente desacoplada de los sistemas de compensación locales, existe una oportunidad para que los bancos proporcionen pagos transfronterizos en tiempo real las 24 horas del día, los 7 días de la semana con firmeza de liquidación en la plataforma a través de CBDC. La naturaleza programable de los contratos inteligentes DLT que constituyen la CBDC también tendría el potencial de usarse para una liquidación más automatizada, activada por eventos o condicional entre los participantes.
+            </p>
+          </ion-col>
+          <ion-col size="6" class="col-custom-1">
+            <h2>Complejidad reducida</h2>
+            <p>
+              El modelo de puente basado en DLT garantiza inherentemente la conectividad punto a punto para todos los participantes de la red. Con un modelo de incorporación apropiado acordado entre los bancos centrales respaldado por el marco legal y regulatorio necesario, esto puede reducir significativamente el costo para cada banco comercial de incorporar, monitorear y mantener relaciones entre sí en el modelo de banca corresponsal actual.
+            </p>
+          </ion-col>
+          <ion-col size="6" class="col-custom-4">
+              <h2>Costos de financiación reducidos</h2>
+              <p>
+                el hecho de que la CBDC esté totalmente respaldada y regulada por los bancos centrales, permitió a los bancos centrales revisar el modelo de financiación y los requisitos para la liquidación basada en CBDC. Los mecanismos de ahorro de liquidez en todo el sistema, incluido el modelo reactivo de recibo o el modelo reactivo de saldo, se pueden implementar de manera más efectiva para lograr costos de financiamiento más bajos para la liquidación de estos pagos transfronterizos basados en CBDC.
+              </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-label>
+  </ion-item>
+  <ion-item class="ion-margin">
+    <ion-label>
+      <h1>Beneficios esperados para los clientes</h1>
+      <p>
+        A través del proyecto mBridge PoC, nuestro objetivo es explorar mBridge como un habilitador para permitir pagos transfronterizos más baratos, más rápidos y más transparentes a nuestros clientes. Si bien existen una serie de dependencias de los marcos técnicos, regulatorios, legales y de comercialización para obtener todos los beneficios potenciales, HSBC se compromete a explorar y apoyar la innovación en pagos habilitada por CBDC. La realización de liquidación transfronteriza en tiempo real 24 horas al día, 7 días a la semana, también permitirá otros casos de uso específicos que se analizan en las secciones siguientes.
+      </p>
     </ion-label>
   </ion-item>
 </ion-content>
