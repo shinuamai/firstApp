@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="warning">
+  <ion-toolbar color="secondary" class="ion-text-wrap">
     <ion-title>
       Financiación del comercio programable
     </ion-title>
@@ -22,7 +22,7 @@
   <ion-label class="ion-text-wrap">
     <h1>Desafíos existentes en la solución comercial</h1>
     <br>
-    <ion-button expand="block" (click)="setOpen1(true)" color="warning">Transparencia de Pagos</ion-button>
+    <ion-button expand="block" (click)="setOpen1(true)" color="success">Transparencia de Pagos</ion-button>
     <ion-modal [isOpen]="isModalOpen1">  <!-- Modal 1 -->
       <ng-template>
         <ion-header>
@@ -71,7 +71,7 @@
         </ion-content>
       </ng-template>
     </ion-modal>
-    <ion-button expand="block" class="ion-text-wrap" (click)="setOpen3(true)" color="warning">Tarifas de pagos transfronterizas impredecibles</ion-button>
+    <ion-button expand="block" class="ion-text-wrap" (click)="setOpen3(true)" color="danger">Tarifas de pagos transfronterizas impredecibles</ion-button>
     <ion-modal [isOpen]="isModalOpen3"> <!-- Modal 3 -->
       <ng-template>
         <ion-header>
@@ -111,6 +111,63 @@
         </ion-content>
       </ng-template>
     </ion-modal>
+  </ion-label>
+</ion-item>
+<ion-item class="ion-margin">
+  <ion-label class="ion-text-wrap">
+    <h1>Flujo de trabajo de pagos comerciales mejorado</h1>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <p>
+            En los últimos años, la digitalización se ha vuelto una tendencia importante en el financiamiento comercial.
+            Nuevas plataformas utilizan la tecnología de contabilidad distribuida para mejorar los flujos de pago en el comercio. 
+            <br><br>
+            Sin embargo, la infraestructura actual separa los procesos de pago y plataformas comerciales,
+            lo que genera falta de visibilidad y retrasos. 
+          </p>
+        </ion-col>
+        <ion-col>
+          <p>
+            Las CBDC podrían conectarse con estas plataformas digitales y unir los mundos de comercio y pago,
+            creando una experiencia completamente digital y continua para los clientes.
+            <br><br>
+            <b>Es decir, con esta conectividad, una CBDC no solo hace que los pagos comerciales sean más rápidos y transparentes,
+            sino que también permite a las Fls ofrecer a sus clientes una solución de financiación comercial más completa.
+          </b> 
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-label>
+</ion-item>
+<ion-item class="ion-margin">
+  <ion-label class="ion-text-wrap">
+    <h1>Beneficios esperados para los clientes</h1>
+    <ion-card color="success">
+      <ion-card-header>
+        <ion-card-title>Seguimiento en tiempo real de un extremo a otro</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more, nothing less.
+      </ion-card-content>
+    </ion-card>
+    <ion-card color="warning">
+      <ion-card-header>
+        <ion-card-title>Condiciones de pago</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more, nothing less.
+      </ion-card-content>
+    </ion-card>
+    <ion-card color="danger">
+      <ion-card-header>
+        <ion-card-title>Liquidación comercial más barata y rápida</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more, nothing less.
+      </ion-card-content>
+    </ion-card>
   </ion-label>
 </ion-item>
 </ion-content>
