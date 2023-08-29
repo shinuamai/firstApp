@@ -7,11 +7,44 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-item class="ion-margin">
+  <ion-label class="ion-text-wrap">
+    <h1>Introducción</h1>
+    <p style="color: white;">Los avances digitales están cambiando cómo se hacen los pagos internacionales,
+       buscando mayor transparencia y rapidez. Para facilitar este comercio y satisfacer las expectativas de los clientes,
+       es esencial modernizar los pagos transfronterizos.</p>
+       <br><br>
+      <p style="color: white;">Es por eso que se propone utilizar una infraestructura llamada Multi-CBDC Bridge para mejorar el proceso de pago en el comercio internacional.
+         Esto ofrecería beneficios a las empresas, simplificando y agilizando los pagos relacionados con el comercio internacional.</p>
+  </ion-label>
+</ion-item>
+<ion-item class="ion-margin">
+  <ion-label class="ion-text-wrap">
+    <h1>Desafíos existentes en la solución comercial</h1>
+    <ion-button expand="block" (click)="setOpen(true)">Transparencia de Pagos</ion-button>
+    <ion-modal [isOpen]="isModalOpen">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Transparencia de Pagos</ion-title>
+            <ion-buttons slot="end">
+              <ion-button (click)="setOpen(false)">Close</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <p>
+            Durante mucho tiempo, los procesos de pagos entre paises han sido complejos,
+            lo que ha causado dificultades para diversos socios y empresas comerciales. A menudo, 
+            los pagos no podían ser rastreados de principio a fin.
+            <br><br>
+            Las empresas constantemente tenían que llamar a la línea de atención al cliente de un banco para obtener información sobre los pagos,
+            realizados y el banco podría no tener la información más reciente. Los bancos podrían tener que enviar recordatorios a su banco contraparte
+            y a otros bancos corresponsales, lo que podría retrasar el proceso durante varios días.
+          </p>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </ion-label>
+</ion-item>
 </ion-content>

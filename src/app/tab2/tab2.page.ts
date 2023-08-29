@@ -9,4 +9,10 @@ export class Tab2Page {
 
   constructor() {}
 
+  isModalOpen = false;
+
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
+  }
+
 }
