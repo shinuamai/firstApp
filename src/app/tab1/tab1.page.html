@@ -7,11 +7,64 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large" id="title">Inicio</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-button expand="full" color="success">Botón 10</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+ <!-- Componente 1: ion-button -->
+ <ion-button expand="full" color="primary">Botón</ion-button>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+ <!-- Componente 2: ion-card -->
+ <ion-card>
+   <ion-card-header>
+     <ion-card-title>Card</ion-card-title>
+   </ion-card-header>
+   <ion-card-content>
+     Contenido de la tarjeta.
+   </ion-card-content>
+ </ion-card>
+
+ <!-- Componente 3: ion-list -->
+ <ion-list>
+   <ion-item>
+     <ion-label>Elemento 1</ion-label>
+   </ion-item>
+   <ion-item>
+     <ion-label>Elemento 2</ion-label>
+   </ion-item>
+ </ion-list>
+
+ <!-- Componente 4: ion-toggle -->
+ <ion-item>
+   <ion-label>Toggle</ion-label>
+   <ion-toggle slot="end"></ion-toggle>
+ </ion-item>
+
+ <!-- Componente 5: ion-input -->
+ <ion-item>
+   <ion-label position="floating">Entrada</ion-label>
+   <ion-input></ion-input>
+ </ion-item>
+
+ <!-- Componente 6: ion-badge -->
+ <ion-badge color="success">Badge</ion-badge>
+
+ <!-- Componente 7: ion-icon -->
+ <ion-icon name="heart"></ion-icon>
+
+ <!-- Componente 8: ion-avatar -->
+ <ion-avatar>
+   <img src="ruta-de-la-imagen.jpg" alt="Avatar">
+ </ion-avatar>
+
+ <!-- Componente 9: ion-chip -->
+ <ion-chip>
+   <ion-label>Chip</ion-label>
+ </ion-chip>
+
+ <!-- Componente 10: ion-spinner -->
+ <ion-spinner></ion-spinner>
 </ion-content>
