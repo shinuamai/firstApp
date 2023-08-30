@@ -1,12 +1,51 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="tertiary" class="ion-text-wrap">
     <ion-title>
-      Tab 3
+      <b>Acuerdo de conexión de gestión patrimonial</b>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-item class="ion-margin">
+    <ion-label class="ion-text-wrap">
+      <h1 style="color:#33ACFF"><b>Introducción</b></h1>
+      <p style="color:white">
+        <br>
+        El plan <i><b>Border Wealth Management Connect (WMC)</b></i>, lanzado en septiembre de 2021 en Hong Kong Macao, permite a los residentes 
+        elegibles invertir en productos de gestión patrimonial distribuidos por bancos en el mercado a través de un canal de flujo de 
+        fondos de circuito cerrado establecido entre sus respectivos sistemas bancarios.
+        <br><br>  
+        Esta iniciativa podría ayudar con la gestión de operaciones complejas y requisitos de cumplimiento, incluida la gestión
+        de cuotas de transferencia, elegibilidad de productos y acuerdos de circuito cerrado.</p>
+    </ion-label>   
+  </ion-item> 
+  <ion-item class="ion-margin">
+    <ion-label class="ion-text-wrap">
+      <h1 style="color:#33ACFF"><b>Descripción general de la prueba de concepto</b></h1>
+      <p style="color:white">
+        <br>
+        Para explorar los beneficios de una liquidación WMC mayorista basada en CBDC a través de mBridge, HSBC tiene como objetivo
+        simular una liquidación de Entrega versus Pago (DVP) de WMC. 
+        <br><br>
+        Esto permitirá la exploración de la cadena de valor de los activos digitales de extremo a extremo, desde el origen, 
+        la digitalización y la emisión hasta la liquidación de DVP atómico nativo de DLT a través de CBDC mayorista.
+    </ion-label>   
+  </ion-item>
+  <ion-item class="ion-margin">
+    <ion-label class="ion-text-wrap">
+      <h1 style="color:#33ACFF"><b>Descripción general de la prueba de concepto</b></h1>
+      <ion-content class="ion-padding">
+        <ion-button id="open-toast" expand="block">Open</ion-button>
+        <p id="message">This toast example uses triggers to automatically open a toast when the button is clicked.</p>
+        <ion-toast trigger="open-toast" message="This toast will disappear after 5 seconds" [duration]="5000"></ion-toast>
+      </ion-content>
+        
+    </ion-label>   
+  </ion-item>
+  
+
+
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 3</ion-title>
