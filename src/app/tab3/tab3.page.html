@@ -1,17 +1,394 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="tertiary" class="ion-text-wrap">
     <ion-title>
-      Tab 3
+      <b>Acuerdo de conexión de gestión patrimonial</b>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-item class="ion-margin">
+    <ion-label class="ion-text-wrap">
+      <h1 style="color:#33ACFF"><b>Introducción</b></h1>
+      <p style="color:white">
+        <br>
+        El plan <i><b>Border Wealth Management Connect (WMC)</b></i>, lanzado en septiembre de 2021 en Hong Kong Macao, permite a los residentes 
+        elegibles invertir en productos de gestión patrimonial distribuidos por bancos en el mercado a través de un canal de flujo de 
+        fondos de circuito cerrado establecido entre sus respectivos sistemas bancarios.
+        <br><br>  
+        Esta iniciativa podría ayudar con la gestión de operaciones complejas y requisitos de cumplimiento, incluida la gestión
+        de cuotas de transferencia, elegibilidad de productos y acuerdos de circuito cerrado.</p>
+    </ion-label>   
+  </ion-item> 
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-item class="ion-margin">
+    <ion-label class="ion-text-wrap">
+      <h1 style="color:#33ACFF"><b>Descripción general de la prueba de concepto</b></h1>
+      <p style="color:white">
+        <br>
+        Para explorar los beneficios de una liquidación WMC mayorista basada en CBDC a través de mBridge, HSBC tiene como objetivo
+        simular una liquidación de Entrega versus Pago (DVP) de WMC. 
+        <br><br>
+        Esto permitirá la exploración de la cadena de valor de los activos digitales de extremo a extremo, desde el origen, 
+        la digitalización y la emisión hasta la liquidación de DVP atómico nativo de DLT a través de CBDC mayorista.
+    </ion-label>   
+  </ion-item>
+  
+  <ion-item class="ion-margin">
+    <ion-label class="ion-text-wrap">
+      <h1 style="color:#33ACFF"><b>Componentes y características de la solución POC para exploración</b></h1>
+      <br>
+      <ion-button fill="outline" color="secondary" (click)="setOpen1(true)">
+        <ion-icon name="paper-plane" color="dark"></ion-icon>
+        <b>Red de activos digitales PoC</b>
+      </ion-button>
+        <ion-modal [isOpen]="isModalOpen1">  
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title color="secondary"><b>Red de activos digitales PoC</b></ion-title>
+                  <ion-buttons slot="end">
+                    <ion-button color="danger" (click)="setOpen1(false)" class="button button-large button-positiv">
+                      <ion-icon name="close-circle"></ion-icon>
+                    </ion-button>
+                  </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <ion-list [inset]="true">
+                <ion-item><ion-label class="ion-text-wrap">• Incorporar e-HKD como moneda de liquidación</ion-label></ion-item>
+                <ion-item><ion-label class="ion-text-wrap">• Intercambio de eHKD-eCNY con activos patrimoniales elegibles y nuevos vehículos de inversión</ion-label></ion-item>
+                <ion-item><ion-label class="ion-text-wrap">• Gestionar la elegibilidad de productos WMC</ion-label></ion-item>
+                <ion-item><ion-label class="ion-text-wrap">• Administrar las reglas del circuito cerrado de WMC</ion-label></ion-item>
+                <ion-item><ion-label class="ion-text-wrap">• Gestionar transacciones bancarias de WMC</ion-label></ion-item>
+                <ion-item><ion-label class="ion-text-wrap">• Tokenización y dinero programable</ion-label></ion-item>
+              </ion-list>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+
+      <ion-button fill="outline" color="secondary" (click)="setOpen2(true)">
+        <ion-icon name="paper-plane" color="dark"></ion-icon>
+        <b>Exploración de las características del dinero programable</b>
+      </ion-button>
+        <ion-modal [isOpen]="isModalOpen2">  
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title color="secondary"><b>Exploración características activos programables</b></ion-title>
+                  <ion-buttons slot="end">
+                    <ion-button color="danger" (click)="setOpen2(false)" class="button button-large button-positiv">
+                      <ion-icon name="close-circle"></ion-icon>
+                    </ion-button>
+                  </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <ion-list [inset]="true">
+                <ion-item><ion-label class="ion-text-wrap">• Verificación del perfil del cliente</ion-label></ion-item>
+                <ion-item><ion-label class="ion-text-wrap">• Periodo de tiempo</ion-label></ion-item>
+                <ion-item><ion-label class="ion-text-wrap">• Clase de activos</ion-label></ion-item>
+                <ion-item><ion-label class="ion-text-wrap">• Identificación de región</ion-label></ion-item>  
+              </ion-list>              
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+
+        <ion-button fill="outline" color="secondary" (click)="setOpen3(true)">
+          <ion-icon name="paper-plane" color="dark"></ion-icon>
+          <b>Tokenizar nuevos vehículos de inversión para PoC</b>
+        </ion-button>
+          <ion-modal [isOpen]="isModalOpen3">  
+            <ng-template>
+              <ion-header>
+                <ion-toolbar>
+                  <ion-title color="secondary"><b>Tokenizar nuevos vehículos de inversión para PoC</b></ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button color="danger" (click)="setOpen3(false)" class="button button-large button-positiv">
+                        <ion-icon name="close-circle"></ion-icon>
+                      </ion-button>
+                    </ion-buttons>
+                </ion-toolbar>
+              </ion-header>
+                <ion-content class="ion-padding">
+                  <ion-list [inset]="true">
+                    <ion-item><ion-label class="ion-text-wrap">• Bonos Verdes</ion-label></ion-item>
+                    <ion-item><ion-label class="ion-text-wrap">• Capital Privado / Capital Riesgo</ion-label></ion-item>
+                    <ion-item><ion-label class="ion-text-wrap">• Propiedad/Bienes Raíces</ion-label></ion-item>
+                    <ion-item><ion-label class="ion-text-wrap">• Sostenibilidad: ESG/ODS ONU</ion-label></ion-item>  
+                  </ion-list>
+                </ion-content>
+            </ng-template>
+          </ion-modal>
+    </ion-label>   
+  </ion-item>
+
+  <ion-item class="ion-margin">
+    <ion-label class="ion-text-wrap">
+      <h1 style="color:#33ACFF"><b>Cadena de valor de activos digitales</b></h1>
+      <p style="color:white">
+        <br>
+        La tokenización habilitada por DLT de muchas clases de activos y la CBDC mayorista implementada como mecanismo 
+        de liquidación DVP fomentarán el desarrollo de nuevos productos, simplificarán la distribución, reducirán los
+        riesgos y fortalecerán el cumplimiento.
+        <br><br>
+        A continuación se refleja de manera interactiva la cadena de valor de extremo a extremo de activos digitalizados/tokenizados.</p>
+        <br>
+
+        <ion-button fill="outline" color="secondary" (click)="setOpen4(true)">
+          <ion-icon name="bookmark" color="dark"></ion-icon>
+          <b>Organización, digitalización y emisión</b>
+        </ion-button>
+          <ion-modal [isOpen]="isModalOpen4">  
+            <ng-template>
+              <ion-header>
+                <ion-toolbar>
+                  <ion-title color="secondary"><b>Organización, digitalización y emisións</b></ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button color="danger" (click)="setOpen4(false)" class="button button-large button-positiv">
+                        <ion-icon name="close-circle"></ion-icon>
+                      </ion-button>
+                    </ion-buttons>
+                </ion-toolbar>
+              </ion-header>
+              <ion-content class="ion-padding">
+                <ion-list [inset]="true">
+                  <ion-item><ion-label class="ion-text-wrap"><i>• Conectividad con bancos centrales para efectivo y bonos CBDC</i></ion-label></ion-item>
+                  <ion-item><ion-label class="ion-text-wrap"><i>• Digitalización y Tokenización de activos físicos y tradicionales, oro y bonos</i></ion-label></ion-item>
+                  <ion-item><ion-label class="ion-text-wrap"><i>• Tokenización de capital privado/emisión</i></ion-label></ion-item>
+                  <ion-item><ion-label class="ion-text-wrap"><i>• Puesta en seguridad</i></ion-label></ion-item>
+                  <ion-item><ion-label class="ion-text-wrap"><i>• Emisión de bonos</i></ion-label></ion-item> 
+                  <ion-item><ion-label class="ion-text-wrap"><i>• Monedas estables</i></ion-label></ion-item> 
+                  <ion-item><ion-label class="ion-text-wrap"><i>• Oro</i></ion-label></ion-item>  
+                </ion-list>             
+              </ion-content>
+            </ng-template>
+          </ion-modal>
+        
+          <ion-button fill="outline" color="warning" (click)="setOpen5(true)">
+            <ion-icon name="bookmark" color="dark"></ion-icon>
+            <b>Negociación y gestión de riesgos</b>
+          </ion-button>
+            <ion-modal [isOpen]="isModalOpen5">  
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title color="warning"><b>Negociación y gestión de riesgos</b></ion-title>
+                      <ion-buttons slot="end">
+                        <ion-button color="danger" (click)="setOpen5(false)" class="button button-large button-positiv">
+                          <ion-icon name="close-circle"></ion-icon>
+                        </ion-button>
+                      </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <ion-list [inset]="true">
+                    <ion-item><ion-label class="ion-text-wrap"><i>• Liquidez y Aprovisionamiento</i></ion-label></ion-item>
+                    <ion-item><ion-label class="ion-text-wrap"><i>• Almacenamiento en balances y sistemas posteriores</i></ion-label></ion-item>
+                    <ion-item><ion-label class="ion-text-wrap"><i>• Negociación desde el corretaje hasta los sistemas de compensación</i></ion-label></ion-item> 
+                    <ion-item><ion-label class="ion-text-wrap"><i>• Orden de procesamiento</i></ion-label></ion-item> 
+                    <ion-item><ion-label class="ion-text-wrap"><i>• Intercambio de procesamiento</i></ion-label></ion-item>  
+                    <ion-item><ion-label class="ion-text-wrap"><i>• FX transfronterizo</i></ion-label></ion-item> 
+                    <ion-item><ion-label class="ion-text-wrap"><i>• Negociación de bonos</i></ion-label></ion-item> 
+                  </ion-list>            
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+  
+            <ion-button fill="outline" color="dark" (click)="setOpen6(true)">
+              <ion-icon name="bookmark" color="dark"></ion-icon>
+              <b>Distribución de productos bancarios</b>
+            </ion-button>
+              <ion-modal [isOpen]="isModalOpen6">  
+                <ng-template>
+                  <ion-header>
+                    <ion-toolbar>
+                      <ion-title color="dark"><b>Distribución de productos bancarios</b></ion-title>
+                        <ion-buttons slot="end">
+                          <ion-button color="danger" (click)="setOpen6(false)" class="button button-large button-positiv">
+                            <ion-icon name="close-circle"></ion-icon>
+                          </ion-button>
+                        </ion-buttons>
+                    </ion-toolbar>
+                  </ion-header>
+                  <ion-content class="ion-padding">
+                    <ion-list [inset]="true">
+                      <ion-item><ion-label class="ion-text-wrap"><i>• Préstamos de titulación</i></ion-label></ion-item>
+                      <ion-item><ion-label class="ion-text-wrap"><i>• Repositorio</i></ion-label></ion-item>
+                      <ion-item><ion-label class="ion-text-wrap"><i>• Eventos del ciclo de vida (pagos de intereses)</i></ion-label></ion-item>
+                      <ion-item><ion-label class="ion-text-wrap"><i>• Gestión de garantías</i></ion-label></ion-item> 
+                      <ion-item><ion-label class="ion-text-wrap"><i>• Financiamiento corporativo</i></ion-label></ion-item>  
+                      <ion-item><ion-label class="ion-text-wrap"><i>• Productos ecológicos y sostenibles</i></ion-label></ion-item> 
+                    </ion-list>          
+                  </ion-content>
+                </ng-template>
+              </ion-modal>
+        
+              <ion-button fill="outline" color="danger" (click)="setOpen7(true)">
+                <ion-icon name="bookmark" color="dark"></ion-icon>
+                <b>Gestión de activos, custodia y servicios</b>
+              </ion-button>
+                <ion-modal [isOpen]="isModalOpen7">  
+                  <ng-template>
+                    <ion-header>
+                      <ion-toolbar>
+                        <ion-title color="danger"><b>Gestión de activos, custodia y servicios</b></ion-title>
+                          <ion-buttons slot="end">
+                            <ion-button color="danger" (click)="setOpen7(false)" class="button button-large button-positiv">
+                              <ion-icon name="close-circle"></ion-icon>
+                            </ion-button>
+                          </ion-buttons>
+                      </ion-toolbar>
+                    </ion-header>
+                    <ion-content class="ion-padding">
+                      <ion-list [inset]="true">
+                        <ion-item><ion-label class="ion-text-wrap"><i>• Custodia desde la liquidación hasta la salvaguardia a largo plazo</i></ion-label></ion-item>
+                        <ion-item><ion-label class="ion-text-wrap"><i>• Servicio de activos (pagos de dividendos)</i></ion-label></ion-item>
+                        <ion-item><ion-label class="ion-text-wrap"><i>• Integración del libro mayor multicadena y gestión de claves</i></ion-label></ion-item>
+                        <ion-item><ion-label class="ion-text-wrap"><i>• Cartera y riesgo de asignación </i></ion-label></ion-item> 
+                        <ion-item><ion-label class="ion-text-wrap"><i>• Diversificación de activos y gestión patrimonial</i></ion-label></ion-item> 
+                        <ion-item><ion-label class="ion-text-wrap"><i>• Distribución de fondos</i></ion-label></ion-item>  
+                      </ion-list>          
+                    </ion-content>
+                  </ng-template>
+                </ion-modal>
+       
+                <ion-button fill="outline" color="primary" (click)="setOpen8(true)">
+                  <ion-icon name="bookmark" color="dark"></ion-icon>
+                  <b>Compensación y liquidación de gestión de efectivo</b>
+                </ion-button>
+                  <ion-modal [isOpen]="isModalOpen8">  
+                    <ng-template>
+                      <ion-header>
+                        <ion-toolbar>
+                          <ion-title color="primary"><b>Compensación y liquidación de gestión de efectivo</b></ion-title>
+                            <ion-buttons slot="end">
+                              <ion-button color="danger" (click)="setOpen8(false)" class="button button-large button-positiv">
+                                <ion-icon name="close-circle"></ion-icon>
+                              </ion-button>
+                            </ion-buttons>
+                        </ion-toolbar>
+                      </ion-header>
+                      <ion-content class="ion-padding">
+                        <ion-list [inset]="true">
+                          <ion-item><ion-label class="ion-text-wrap"><i>• KYC y AML</i></ion-label></ion-item>
+                          <ion-item><ion-label class="ion-text-wrap"><i>• Provisión de liquidez</i></ion-label></ion-item>
+                          <ion-item><ion-label class="ion-text-wrap"><i>• Conectividad con vías de pago nuevas y existentes</i></ion-label></ion-item>
+                          <ion-item><ion-label class="ion-text-wrap"><i>• Herramientas de gestión de efectivo y generación de informes</i></ion-label></ion-item> 
+                          <ion-item><ion-label class="ion-text-wrap"><i>• Gestión de financiación y liquidez</i></ion-label></ion-item> 
+                          <ion-item><ion-label class="ion-text-wrap"><i>• Depósitos</i></ion-label></ion-item>  
+                        </ion-list>          
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+
+                  <ion-button fill="outline" color="tertiary" (click)="setOpen9(true)">
+                    <ion-icon name="bookmark" color="dark"></ion-icon>
+                    <b>Compensación y liquidación de gestión de efectivo</b>
+                  </ion-button>
+                    <ion-modal [isOpen]="isModalOpen9">  
+                      <ng-template>
+                        <ion-header>
+                          <ion-toolbar>
+                            <ion-title color="tertiary"><b>Compensación y liquidación de gestión de efectivo</b></ion-title>
+                              <ion-buttons slot="end">
+                                <ion-button color="danger" (click)="setOpen9(false)" class="button button-large button-positiv">
+                                  <ion-icon name="close-circle"></ion-icon>
+                                </ion-button>
+                              </ion-buttons>
+                          </ion-toolbar>
+                        </ion-header>
+                        <ion-content class="ion-padding">
+                          <ion-list [inset]="true">
+                            <ion-item><ion-label class="ion-text-wrap"><i>• KYC y AML</i></ion-label></ion-item>
+                            <ion-item><ion-label class="ion-text-wrap"><i>• Provisión de liquidez</i></ion-label></ion-item>
+                            <ion-item><ion-label class="ion-text-wrap"><i>• Conectividad con vías de pago nuevas y existentes</i></ion-label></ion-item>
+                            <ion-item><ion-label class="ion-text-wrap"><i>• Herramientas de gestión de efectivo y generación de informes</i></ion-label></ion-item> 
+                            <ion-item><ion-label class="ion-text-wrap"><i>• Gestión de financiación y liquidez</i></ion-label></ion-item> 
+                            <ion-item><ion-label class="ion-text-wrap"><i>• Depósitos</i></ion-label></ion-item>  
+                          </ion-list>          
+                        </ion-content>
+                      </ng-template>
+                    </ion-modal>
+    </ion-label>   
+  </ion-item> 
+
+  <ion-item class="ion-margin">
+    <ion-label class="ion-text-wrap">
+      <h1 style="color:#33ACFF"><b>Otros casos de uso del dinero programable basado en CBDC</b></h1>
+      <p style="color:white">
+        <br>
+        <ion-list>
+          <!-- The reorder gesture is disabled by default, enable it to drag and drop items -->
+          <!-- Casting $event to $any is a temporary fix for this bug https://github.com/ionic-team/ionic-framework/issues/24245 -->
+          <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
+            <ion-item>
+              <ion-label class="ion-text-wrap">
+                <b>• ESG:</b> Dinero programado como regalo de cumpleaños para un adolescente donde el dinero está destinado
+                para gastarse únicamente en inversiones ESG, animando así al adolescente a crear el hábito de invertir en sostenibilidad
+              </ion-label>
+              <ion-reorder slot="end">
+                <ion-icon name="pizza" color="secondary"></ion-icon>
+              </ion-reorder>
+            </ion-item>
+
+            <ion-item>
+              <ion-label class="ion-text-wrap">
+                <b>• Fichas de caridad:</b> Los ciudadanos pueden comprar fichas de caridad que están destinados para ser donados a 
+                organizaciones benéficas reconocidas con prueba inmutable para deducciones de impuestos y otros fines de presentación de informes.
+              </ion-label>
+              <ion-reorder slot="end">
+                <ion-icon name="pizza" color="secondary"></ion-icon>
+              </ion-reorder>
+            </ion-item>
+
+            <ion-item>
+              <ion-label class="ion-text-wrap">
+                <b>• Ayuda comunitaria:</b> El gobierno emite ayudas específicas de divisa. Por ejemplo, los vales para pequeñas empresas 
+                Covid-19 de Hong Kong que están programados para ser elegibles para su uso transfronterizo en el área de GBA
+              </ion-label>
+              <ion-reorder slot="end">
+                <ion-icon name="pizza" color="secondary"></ion-icon>
+              </ion-reorder>
+            </ion-item>
+
+            <ion-item>
+              <ion-label class="ion-text-wrap">
+                <b>• Esquema de inversión extranjera/regional:</b> Un ciudadano de una jurisdicción extranjera podría usar tokens
+                de dinero programables para invertir en acciones locales sin necesidad de abrir una inversión en el país o una cuenta 
+                bancaria con el token limitado a invertirse en clases de activos autorizadas en el mercado local
+              </ion-label>
+              <ion-reorder slot="end">
+                <ion-icon name="pizza" color="secondary"></ion-icon>
+              </ion-reorder>
+            </ion-item>
+          </ion-reorder-group>
+        </ion-list>
+
+        <p style="color:white">
+        <br>
+        Si bien algunos de estos casos de uso de dinero programable aún pueden operar sin el mBridge a nivel nacional, la disponibilidad de 
+        un servicio de liquidación transfronteriza mejoraría en gran medida el alcance y la aplicabilidad de estos casos de uso.</p>
+        <br><br>
+        <ion-card>
+          <ion-img src="assets/images/diagrama.png" alt="imagen"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Diagrama conceptual del dinero programable respaldado por CBDC</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-label>   
+  </ion-item>
+
+  <ion-item class="ion-margin">
+    <ion-label class="ion-text-wrap">
+      <h1 style="color:#33ACFF"><b>Beneficios esperados para los clientes</b></h1>
+      <p style="color:white">
+        <br>
+        La plataforma mBridge permite la exploración para agilizar el proceso de liquidación transfronteriza de transacciones 
+        de Wealth Management Connect. La adopción amplia de CBDC también sería un catalizador para que los inversores puedan disponer de
+        productos de inversión adicionales y nuevos activos tokenizados.</p>
+    </ion-label>   
+  </ion-item>  
 </ion-content>
+
+
