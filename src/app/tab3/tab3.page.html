@@ -38,17 +38,17 @@
     <ion-label class="ion-text-wrap">
       <h1 style="color:#33ACFF"><b>Componentes y características de la solución POC para exploración</b></h1>
       <br>
-      <ion-button fill="outline" color="secondary" (click)="setOpen1(true)">
-        <ion-icon name="paper-plane" color="dark"></ion-icon>
+      <ion-button class="ion-text-wrap" fill="outline" color="secondary" (click)="setOpen1(true)">
+        <ion-icon slot="start" name="paper-plane" color="dark"></ion-icon>
         <b>Red de activos digitales PoC</b>
       </ion-button>
         <ion-modal [isOpen]="isModalOpen1">  
           <ng-template>
             <ion-header>
               <ion-toolbar>
-                <ion-title color="secondary"><b>Red de activos digitales PoC</b></ion-title>
+                <ion-title class="ion-text-wrap" color="secondary"><b>Red de activos digitales PoC</b></ion-title>
                   <ion-buttons slot="end">
-                    <ion-button color="danger" (click)="setOpen1(false)" class="button button-large button-positiv">
+                    <ion-button class="ion-text-wrap" color="danger" (click)="setOpen1(false)" class="button button-large button-positiv">
                       <ion-icon name="close-circle"></ion-icon>
                     </ion-button>
                   </ion-buttons>
@@ -67,15 +67,15 @@
           </ng-template>
         </ion-modal>
 
-      <ion-button fill="outline" color="secondary" (click)="setOpen2(true)">
-        <ion-icon name="paper-plane" color="dark"></ion-icon>
+      <ion-button class="ion-text-wrap" fill="outline" color="secondary" (click)="setOpen2(true)">
+        <ion-icon slot="start" name="paper-plane" color="dark"></ion-icon>
         <b>Exploración de las características del dinero programable</b>
       </ion-button>
         <ion-modal [isOpen]="isModalOpen2">  
           <ng-template>
             <ion-header>
-              <ion-toolbar>
-                <ion-title color="secondary"><b>Exploración características activos programables</b></ion-title>
+              <ion-toolbar >
+                <ion-title color="secondary"><b class="ion-text-wrap">Exploración características activos programables</b></ion-title>
                   <ion-buttons slot="end">
                     <ion-button color="danger" (click)="setOpen2(false)" class="button button-large button-positiv">
                       <ion-icon name="close-circle"></ion-icon>
@@ -94,15 +94,15 @@
           </ng-template>
         </ion-modal>
 
-        <ion-button fill="outline" color="secondary" (click)="setOpen3(true)">
-          <ion-icon name="paper-plane" color="dark"></ion-icon>
+        <ion-button class="ion-text-wrap" fill="outline" color="secondary" (click)="setOpen3(true)">
+          <ion-icon slot="start" name="paper-plane" color="dark"></ion-icon>
           <b>Tokenizar nuevos vehículos de inversión para PoC</b>
         </ion-button>
           <ion-modal [isOpen]="isModalOpen3">  
             <ng-template>
               <ion-header>
                 <ion-toolbar>
-                  <ion-title color="secondary"><b>Tokenizar nuevos vehículos de inversión para PoC</b></ion-title>
+                  <ion-title color="secondary"><b class="ion-text-wrap">Tokenizar nuevos vehículos de inversión para PoC</b></ion-title>
                     <ion-buttons slot="end">
                       <ion-button color="danger" (click)="setOpen3(false)" class="button button-large button-positiv">
                         <ion-icon name="close-circle"></ion-icon>
@@ -135,15 +135,15 @@
         A continuación se refleja de manera interactiva la cadena de valor de extremo a extremo de activos digitalizados/tokenizados.</p>
         <br>
 
-        <ion-button fill="outline" color="secondary" (click)="setOpen4(true)">
-          <ion-icon name="bookmark" color="dark"></ion-icon>
+        <ion-button class="ion-text-wrap" fill="outline" color="secondary" (click)="setOpen4(true)">
+          <ion-icon slot="start" name="bookmark" color="dark"></ion-icon>
           <b>Organización, digitalización y emisión</b>
         </ion-button>
           <ion-modal [isOpen]="isModalOpen4">  
             <ng-template>
               <ion-header>
                 <ion-toolbar>
-                  <ion-title color="secondary"><b>Organización, digitalización y emisións</b></ion-title>
+                  <ion-title color="secondary"><b class="ion-text-wrap">Organización, digitalización y emisións</b></ion-title>
                     <ion-buttons slot="end">
                       <ion-button color="danger" (click)="setOpen4(false)" class="button button-large button-positiv">
                         <ion-icon name="close-circle"></ion-icon>
@@ -165,15 +165,15 @@
             </ng-template>
           </ion-modal>
         
-          <ion-button fill="outline" color="warning" (click)="setOpen5(true)">
-            <ion-icon name="bookmark" color="dark"></ion-icon>
+          <ion-button class="ion-text-wrap" fill="outline" color="warning" (click)="setOpen5(true)">
+            <ion-icon slot="start" name="bookmark" color="dark"></ion-icon>
             <b>Negociación y gestión de riesgos</b>
           </ion-button>
             <ion-modal [isOpen]="isModalOpen5">  
               <ng-template>
                 <ion-header>
                   <ion-toolbar>
-                    <ion-title color="warning"><b>Negociación y gestión de riesgos</b></ion-title>
+                    <ion-title color="warning"><b class="ion-text-wrap">Negociación y gestión de riesgos</b></ion-title>
                       <ion-buttons slot="end">
                         <ion-button color="danger" (click)="setOpen5(false)" class="button button-large button-positiv">
                           <ion-icon name="close-circle"></ion-icon>
@@ -195,15 +195,15 @@
               </ng-template>
             </ion-modal>
   
-            <ion-button fill="outline" color="dark" (click)="setOpen6(true)">
-              <ion-icon name="bookmark" color="dark"></ion-icon>
+            <ion-button class="ion-text-wrap" fill="outline" color="dark" (click)="setOpen6(true)">
+              <ion-icon slot="start" name="bookmark" color="dark"></ion-icon>
               <b>Distribución de productos bancarios</b>
             </ion-button>
               <ion-modal [isOpen]="isModalOpen6">  
                 <ng-template>
                   <ion-header>
                     <ion-toolbar>
-                      <ion-title color="dark"><b>Distribución de productos bancarios</b></ion-title>
+                      <ion-title color="dark"><b class="ion-text-wrap">Distribución de productos bancarios</b></ion-title>
                         <ion-buttons slot="end">
                           <ion-button color="danger" (click)="setOpen6(false)" class="button button-large button-positiv">
                             <ion-icon name="close-circle"></ion-icon>
@@ -224,15 +224,15 @@
                 </ng-template>
               </ion-modal>
         
-              <ion-button fill="outline" color="danger" (click)="setOpen7(true)">
-                <ion-icon name="bookmark" color="dark"></ion-icon>
+              <ion-button class="ion-text-wrap" fill="outline" color="danger" (click)="setOpen7(true)">
+                <ion-icon slot="start" name="bookmark" color="dark"></ion-icon>
                 <b>Gestión de activos, custodia y servicios</b>
               </ion-button>
                 <ion-modal [isOpen]="isModalOpen7">  
                   <ng-template>
                     <ion-header>
                       <ion-toolbar>
-                        <ion-title color="danger"><b>Gestión de activos, custodia y servicios</b></ion-title>
+                        <ion-title color="danger"><b class="ion-text-wrap">Gestión de activos, custodia y servicios</b></ion-title>
                           <ion-buttons slot="end">
                             <ion-button color="danger" (click)="setOpen7(false)" class="button button-large button-positiv">
                               <ion-icon name="close-circle"></ion-icon>
@@ -253,15 +253,15 @@
                   </ng-template>
                 </ion-modal>
        
-                <ion-button fill="outline" color="primary" (click)="setOpen8(true)">
-                  <ion-icon name="bookmark" color="dark"></ion-icon>
+                <ion-button class="ion-text-wrap" fill="outline" color="primary" (click)="setOpen8(true)">
+                  <ion-icon slot="start" name="bookmark" color="dark"></ion-icon>
                   <b>Compensación y liquidación de gestión de efectivo</b>
                 </ion-button>
                   <ion-modal [isOpen]="isModalOpen8">  
                     <ng-template>
                       <ion-header>
                         <ion-toolbar>
-                          <ion-title color="primary"><b>Compensación y liquidación de gestión de efectivo</b></ion-title>
+                          <ion-title color="primary"><b class="ion-text-wrap">Compensación y liquidación de gestión de efectivo</b></ion-title>
                             <ion-buttons slot="end">
                               <ion-button color="danger" (click)="setOpen8(false)" class="button button-large button-positiv">
                                 <ion-icon name="close-circle"></ion-icon>
@@ -282,15 +282,15 @@
                     </ng-template>
                   </ion-modal>
 
-                  <ion-button fill="outline" color="tertiary" (click)="setOpen9(true)">
-                    <ion-icon name="bookmark" color="dark"></ion-icon>
-                    <b>Compensación y liquidación de gestión de efectivo</b>
+                  <ion-button class="ion-text-wrap" fill="outline" color="tertiary" (click)="setOpen9(true)">
+                    <ion-icon slot="start" name="bookmark" color="dark"></ion-icon>
+                    <b>Canales internos y externos</b>
                   </ion-button>
                     <ion-modal [isOpen]="isModalOpen9">  
                       <ng-template>
                         <ion-header>
                           <ion-toolbar>
-                            <ion-title color="tertiary"><b>Compensación y liquidación de gestión de efectivo</b></ion-title>
+                            <ion-title color="tertiary"><b class="ion-text-wrap">Canales internos y externos</b></ion-title>
                               <ion-buttons slot="end">
                                 <ion-button color="danger" (click)="setOpen9(false)" class="button button-large button-positiv">
                                   <ion-icon name="close-circle"></ion-icon>
@@ -300,12 +300,11 @@
                         </ion-header>
                         <ion-content class="ion-padding">
                           <ion-list [inset]="true">
-                            <ion-item><ion-label class="ion-text-wrap"><i>• KYC y AML</i></ion-label></ion-item>
-                            <ion-item><ion-label class="ion-text-wrap"><i>• Provisión de liquidez</i></ion-label></ion-item>
-                            <ion-item><ion-label class="ion-text-wrap"><i>• Conectividad con vías de pago nuevas y existentes</i></ion-label></ion-item>
-                            <ion-item><ion-label class="ion-text-wrap"><i>• Herramientas de gestión de efectivo y generación de informes</i></ion-label></ion-item> 
-                            <ion-item><ion-label class="ion-text-wrap"><i>• Gestión de financiación y liquidez</i></ion-label></ion-item> 
-                            <ion-item><ion-label class="ion-text-wrap"><i>• Depósitos</i></ion-label></ion-item>  
+                            <ion-item><ion-label class="ion-text-wrap"><i>• Internacionalización y conectividad transfronteriza</i></ion-label></ion-item>
+                            <ion-item><ion-label class="ion-text-wrap"><i>• Ecosistemas y asociaciones</i></ion-label></ion-item>
+                            <ion-item><ion-label class="ion-text-wrap"><i>• Tecnología e integración</i></ion-label></ion-item>
+                            <ion-item><ion-label class="ion-text-wrap"><i>• Informes regulatorios</i></ion-label></ion-item> 
+                            <ion-item><ion-label class="ion-text-wrap"><i>• Productos verdes y sostenibilidad</i></ion-label></ion-item>   
                           </ion-list>          
                         </ion-content>
                       </ng-template>
