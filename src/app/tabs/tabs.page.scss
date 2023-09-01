@@ -1,13 +1,41 @@
-ion-tab-button {
+.tab1{
 
     --color: #eceef0;
     
-    --color-selected: #c22828;
+    --color-selected: #e42d2d;
 }
     
-ion-tab-button:hover {
+.tab1:hover {
     
-    --color: #6c1c16;
+    --color: #e42d2d;
     
-    ---color-selected: #c22828;
+    ---color-selected: #e42d2d;
+}
+
+.tab2{
+
+    --color: #eceef0;
+    
+    --color-selected: #387caa;
+}
+    
+.tab2:hover {
+    
+    --color: #387caa;
+    
+    ---color-selected: #387caa;
+}
+
+.tab3{
+
+    --color: #eceef0;
+    
+    --color-selected: #5a53c4;
+}
+    
+.tab3:hover {
+    
+    --color: #5a53c4;
+    
+    ---color-selected: #5a53c4;
 }
