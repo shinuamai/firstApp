@@ -24,3 +24,25 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+ion-label {
+    white-space: normal !important;
+    }
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Asegura que ocupe toda la altura disponible */
+    }
+.col-custom-1 {
+    background-color: rgb(218, 65, 60); /* Cambia el color de fondo según tu preferencia */
+    }
+    
+.col-custom-2 {
+background-color: rgb(38, 94, 38); /* Cambia el color de fondo según tu preferencia */
+}
+
+.col-custom-4 {
+background-color: rgb(151, 45, 77); /* Cambia el color de fondo según tu preferencia */
+}
+
